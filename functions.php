@@ -14,6 +14,14 @@ function add_settings_page() {
 }
 
 /*---------------------------------------------------
+Implement 'Options' page for Advanced Custom Field Pro
+----------------------------------------------------*/
+
+if( function_exists( 'acf_add_options_page' ) ) { 
+    acf_add_options_page();
+}
+
+/*---------------------------------------------------
 add actions
 ----------------------------------------------------*/
 add_action( 'admin_init', 'theme_settings_init' );
@@ -36,3 +44,6 @@ function theme_settings_page() { ?>
         </div>
     </div>
 <?php } ?>
+
+
+
