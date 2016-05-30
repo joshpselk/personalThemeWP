@@ -40,7 +40,7 @@
 							<?php } if( get_field('twitter', 'options') ) { ?>
 								<li>
 									<a class="socialIco" target="_blank" href="<?php $twLink = get_field('twitter', 'options'); if (!preg_match("~^(?:f|ht)tps?://~i", $twLink)) { $twLink = "http://" . $twLink; } echo $twLink; ?>">
-										<img src="<?php bloginfo('template_directory'); ?>/images/fb.png" alt="Follow me on twitter" />
+										<img src="<?php bloginfo('template_directory'); ?>/images/tw.png" alt="Follow me on twitter" />
 									</a>
 								</li>
 							<?php } if( get_field('linkedin', 'options') ) { ?>
