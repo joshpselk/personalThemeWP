@@ -55,7 +55,12 @@
 									</li>
 								<?php } ?>
 							</ul>
-							</ul>
+						</div>
+					<?php } ?>
+					<?php if( get_field( 'submission_form', 'options' ) ) { 
+						$formCode = get_field( 'submission_form', 'options' ); ?>
+						<div>
+							<?php echo do_shortcode( $formCode ); ?>
 						</div>
 					<?php } ?>
 				</div><!--footer-->
