@@ -31,7 +31,8 @@
 					<?php if( get_field('facebook', 'options') ||
 						get_field('twitter', 'options') ||
 						get_field('linkedin', 'options') ||
-						get_field('github', 'options')) { ?>
+						get_field('github', 'options') ||
+						get_field('email', 'options') ) { ?>
 						<div class="socialIcons">
 							<ul>
 								<?php if( get_field('facebook', 'options') ) { ?>
@@ -56,6 +57,12 @@
 									<li>
 										<a class="socialIco" target="_blank" href="<?php $ghLink = get_field('github', 'options'); if (!preg_match("~^(?:f|ht)tps?://~i", $ghLink)) { $ghLink = "http://" . $ghLink; } echo $ghLink; ?>">
 											<img src="<?php bloginfo('template_directory'); ?>/images/gh.png" alt="Follow me on Github" />
+										</a>
+									</li>
+								<?php } if( get_field('email', 'options') ) { ?>
+									<li>
+										<a class="socialIco" target="_top" href="<?php $mailLink = "mailto:" . get_field('email', 'options'); echo $mailLink; ?>">
+											<img src="<?php bloginfo('template_directory'); ?>/images/mail.png" alt="Email me" />
 										</a>
 									</li>
 								<?php } ?>
