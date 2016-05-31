@@ -10,24 +10,28 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	</head>
 	<body>
-		<div id="wrapper">
+		<div id="wrapper large-12 medium-12 small-12">
 			<div class="row">
-				<div id="header" class="left large-12 medium-12 small-12">
-					<?php if( get_field( 'logo', 'options' ) ) {
+				<div id="header" class="large-12 medium-12 small-12">
+					<?php if( get_field( 'logo', 'options' ) ) { ?>
+						<div class="logoImage large-12 medium-12 small-12 columns">
 
-						$image = get_field( 'logo', 'options' );
-						$url = $image['url'];
-						$alt = $image['alt']; 
-						?>
+							<?php 
+							$image = get_field( 'logo', 'options' );
+							$url = $image['url'];
+							$alt = $image['alt']; 
+							?>
 
-						<img src="<?php echo $url; ?>" alt = "<?php echo $alt; ?>" />
-
+							<img src="<?php echo $url; ?>" alt = "<?php echo $alt; ?>" />
+						</div><!--logoImage-->
 					<?php } ?>
-					<h1>
-						<?php if( get_field( 'name', 'options' ) ) {
-							the_field( 'name', 'options' );
-						} ?>
-					</h1>
+					<div class="myName large-12 medium-12 small-12">
+						<?php if( get_field( 'name', 'options' ) ) { ?>
+							<h1>
+								<?php the_field( 'name', 'options' ); ?>
+							</h1>
+						<?php } ?>
+					</div>
 					<h2>
 						<?php if( get_field( 'title', 'options' ) ) {
 							the_field( 'title', 'options' );

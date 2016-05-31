@@ -7,11 +7,51 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/*Header Styles*/
+.logoImage {
+	text-align:left;
+}
+
+.socialIcons ul,
+.socialIconFooter ul {
+	list-style-type:none;
+}
+
+.socialIcons ul li {
+	display:inline-block;
+}
+
+/*Footer Styles*/
+.socialIconFooter {
+    float:left;
+    margin-top:1em;
+}
+
+.socialIconFooter ul {
+	text-align:left;
+}
+
+.socialIconFooter ul li {
+	margin-bottom: 0.25em;
+}
+
+.socialIco ul li {
+    display: inline-block;
+}
+
+.socialIco ul li img {
+	margin-right:0.5em;
+}
+
+.contactForm {
+	float:right;
+	margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 body { text-align: center; }
-#wrapper { display: block; border: 1px #a2a2a2 solid; width:90%; margin:0px auto; }
-#header { border: 2px #a2a2a2 solid; }
-#content { border: 2px #a2a2a2 solid; float: left; }
-#sidebar { border: 2px #a2a2a2 solid; float: right; }
+#wrapper { display: block; width:90%; margin:0px auto; }
+#content { float: left; }
+#sidebar { float: right; }
 #delimiter { clear: both; }
-#footer { border: 2px #a2a2a2 solid; }
 .title { font-size: 11pt; font-family: verdana; font-weight: bold; }
