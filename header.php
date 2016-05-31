@@ -1,5 +1,10 @@
 <html>
-	<head><title>Celer Creo</title>
+	<head>
+		<title>
+			<?php if( get_field( 'name', 'options' ) ) {
+				the_field( 'name', 'options' );
+			} ?>
+		</title>
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/foundation.css">
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/app.css">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
@@ -7,7 +12,7 @@
 	<body>
 		<div id="wrapper">
 			<div class="row">
-				<div id="header" class="large-12 medium-12 small-12">
+				<div id="header" class="left large-12 medium-12 small-12">
 					<?php if( get_field( 'logo', 'options' ) ) {
 
 						$image = get_field( 'logo', 'options' );
