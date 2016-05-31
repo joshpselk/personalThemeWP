@@ -1,10 +1,12 @@
 <div id="sidebar" class="large-12 medium-12 small-12">
-	<h2><?php _e('Categories'); ?></h2>
-	<ul>
-		<?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
-	</ul>
-	<h2><?php _e('Archives'); ?></h2>
-	<ul>
-		<?php wp_get_archives('type=monthly'); ?>
-	</ul>
+	<div class="row">
+		<div class="fullDescription left large-12 medium-12 small-12">
+			<h3>Bio</h3>
+			<?php if( get_field( 'description', 'options' ) ) { ?>
+				<p>
+					<?php the_field( 'description', 'options' ); ?>
+				</p>
+			<?php } ?>
+		</div>
+	</div><!--row-->
 </div>
