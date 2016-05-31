@@ -7,7 +7,13 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+@import url("css/reset.css");
+
 /*Header Styles*/
+#header {
+	border-bottom: 1px #a2a2a2 solid;
+}
+
 .logoImage {
 	text-align:left;
 }
@@ -19,6 +25,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .socialIcons ul li {
 	display:inline-block;
+}
+
+/*Main Content Styles*/
+#content {
+	border-bottom: 1px #a2a2a2 solid;
+	float: left;
+}
+
+/*Sidebar Styles*/
+#sidebar {
+	border-bottom: 1px #a2a2a2 solid;
+	float: right;
 }
 
 /*Footer Styles*/
@@ -49,9 +67,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     margin-top: 1em;
 }
 
+.hp-wrap {
+	display:none;
+}
+
 body { text-align: center; }
 #wrapper { display: block; width:90%; margin:0px auto; }
-#content { float: left; }
-#sidebar { float: right; }
 #delimiter { clear: both; }
 .title { font-size: 11pt; font-family: verdana; font-weight: bold; }
