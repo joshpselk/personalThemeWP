@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/foundation.css">
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/app.css">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
 	</head>
 	<body>
 		<div id="wrapper large-12 medium-12 small-12">

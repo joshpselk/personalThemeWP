@@ -15,7 +15,9 @@
 													<img src="<?php bloginfo('template_directory'); ?>/images/fb.png" alt="Like me on facebook" />
 												</li>
 												<li>
-													<?php echo $fbOriginal; ?>
+													<p>
+														<?php echo $fbOriginal; ?>
+													</p>
 												</li>
 											</ul>
 										</a>
@@ -28,7 +30,9 @@
 													<img src="<?php bloginfo('template_directory'); ?>/images/tw.png" alt="Follow me on twitter" />
 												</li>
 												<li>
-													<?php echo $twOriginal; ?>
+													<p>
+														<?php echo $twOriginal; ?>
+													</p>
 												</li>
 											</ul>
 										</a>
@@ -41,7 +45,9 @@
 													<img src="<?php bloginfo('template_directory'); ?>/images/in.png" alt="Follow me on LinkedIn" />
 												</li>
 												<li>
-													<?php echo $liOriginal; ?>
+													<p>
+														<?php echo $liOriginal; ?>
+													</p>
 												</li>
 											</ul>
 										</a>
@@ -54,7 +60,9 @@
 													<img src="<?php bloginfo('template_directory'); ?>/images/gh.png" alt="Follow me on Github" />
 												</lil>
 												<li>
-													<?php echo $ghOriginal; ?>
+													<p>
+														<?php echo $ghOriginal; ?>
+													</p>
 												</li>
 											</ul>
 										</a>
@@ -67,19 +75,15 @@
 													<img src="<?php bloginfo('template_directory'); ?>/images/mail.png" alt="Email me" />
 												</li>
 												<li>
-													<?php echo $mailOriginal; ?>
+													<p>
+														<?php echo $mailOriginal; ?>
+													</p>
 												</li>
 											</ul>
 										</a>
 									</li>
 								<?php } ?>
 							</ul>
-						</div>
-					<?php } ?>
-					<?php if( get_field( 'submission_form', 'options' ) ) { 
-						$formCode = get_field( 'submission_form', 'options' ); ?>
-						<div class="contactForm large-8 medium-12 small-12 columns">
-							<?php echo do_shortcode( $formCode ); ?>
 						</div>
 					<?php } ?>
 				</div><!--footer-->
